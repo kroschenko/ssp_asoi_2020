@@ -3,9 +3,15 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 5, 500};
+        int array[];
+        long array1[];
+        array = new int[args.length];
+        array1 = new long[args.length];
+        for (int i = 0; i < args.length; i++) {
+            array[i] = Integer.parseInt(args[i]);
+            array1[i] = Long.parseLong(args[i]);
+        }
         System.out.println(getMaxMin(array));
-        long[] array1 = {1, 2, 3, 5, 500, 6, 7};
         removeElement(array1, 2);
         System.out.println(randomString(50, false));
     }
@@ -45,7 +51,7 @@ public class Main {
             }
         } else {
             int a = 0;
-            int b = 255;
+            int b = 65536;
             for (int i = 0; i < lenght; i++) {
                 builder.append((char) (a + (int) (Math.random() * b)));
             }
