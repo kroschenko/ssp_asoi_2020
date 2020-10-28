@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lab2litv">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lab2/out/artifacts/lab2_jar/lab2litv.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
