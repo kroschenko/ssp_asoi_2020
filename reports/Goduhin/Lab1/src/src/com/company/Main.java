@@ -28,7 +28,7 @@ public class Main {
             temp = array[j];
             array[j]=array[i];
             array[i]=temp;
-            }
+        }
         for (int i=0;i<array.length;i++){
             System.out.print(array[i]);
 
@@ -41,22 +41,28 @@ public class Main {
         String result2 = result.replaceAll("[ё ]", "е");
         System.out.print(result2);
         System.out.println();
-       int n = result2.length();
-       for (int i=0;i<n/2;++i){
-           if(result2.charAt(i)!=result2.charAt(n-i-1)){
-               return false;
+        int n = result2.length();
+        for (int i=0;i<n/2;++i){
+            if(result2.charAt(i)!=result2.charAt(n-i-1)){
+                return false;
 
-           }
+            }
 
-       }
-       return true;
+        }
+        return true;
 
 
     }
     public static void main(String[] args) {
+        int array[];
+        array = new int[args.length];
+        for (int i = 0; i < args.length; i++) {
+            array[i] = Integer.parseInt(args[i]);
+            System.out.println(array[i]);
+        }
 
-        zad1(new int[]{3,5,1,2,10});
-        reverse(new int[]{1,2,3,4,5});
+        zad1(array);
+        reverse(array);
         System.out.println();
         if(polindrome("А лис, он умён – крыса сыр к нему носила")){
             System.out.print("Palindrome");
@@ -64,6 +70,6 @@ public class Main {
         else{
             System.out.print("Not palindrome");
         }
-        };
+    };
 
 }
