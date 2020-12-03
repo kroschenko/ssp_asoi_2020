@@ -7,6 +7,9 @@ public class CharMultitude {
     private Character [] list;
 
     public CharMultitude(int power, Character[] list) {
+        Set<Character> uniq = new HashSet<Character>();
+        uniq.addAll(Arrays.asList(list));
+        list = uniq.toArray(new Character[0]);
         this.power = power;
         if (power>= list.length)
             this.list = list;
@@ -21,19 +24,15 @@ public class CharMultitude {
     }
 
     public void add(char a) {
-        boolean full = true;
-        Character [] buf = new Character[list.length+1];
-        int i = 0;
+        Set<Character> buff = new HashSet<>();
         if (this.list.length == power) {
             System.out.println("Мощность вашего множества достигла ограничения, добавить символ нельзя");
         } else {
             for (Character ch :list) {
-                buf[i] = ch;
-                i++;
+                buff.add(ch);
             }
-            int id = this.list.length;
-            buf[id] = a;
-            list = buf;
+            buff.add(a);
+            list = buff.toArray(new Character[0]);
         }
     }
 
@@ -46,19 +45,23 @@ public class CharMultitude {
         }
     }
 
-    public static String union(CharMultitude a, CharMultitude b) {
-        Character[] union = new Character[a.list.length+b.list.length];
-        int i=0;
-        int j=a.list.length;
-        for (Character ch : a.list) {
-                union[i]=ch;
-                i++;
+    public static CharMultitude union(CharMultitude a, CharMultitude b) {
+        Set<Character> setA = new HashSet<>();
+        setA.addAll(Arrays.asList(a.list));
+        Set<Character> setB = new HashSet<>();
+        setB.addAll(Arrays.asList(b.list));
+        Set<Character> unionSet = new HashSet<>();
+        unionSet.addAll(setA);
+        unionSet.addAll(setB);
+        Character [] out = new Character[unionSet.size()];
+        int i = 0;
+        for (char ch : unionSet) {
+            out[i] = ch;
+            i++;
         }
-        for (Character ch : b.list) {
-                union[j]=ch;
-                j++;
-        }
-        return Arrays.toString(union);
+
+        CharMultitude output = new CharMultitude(a.power+b.power, out);
+        return output;
         }
 
     @Override
