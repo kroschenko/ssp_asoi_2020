@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="320.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="37.0" prefHeight="369.0" prefWidth="320.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="thirdButton" layoutX="21.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" text="Спсок книг, взятых на чтение с ФИО" textAlignment="CENTER" />
+            <Button fx:id="firstButton" layoutX="20.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" text="Формирование общего списка книг" />
+            <Button fx:id="lastButton" layoutX="21.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" style="-fx-background-color: black;" text="Формирование списка книг, старше n лет" textFill="WHITE" />
+            <Button fx:id="secondButton" layoutX="21.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" text="Формирование списка книг, взятых на чтение" />
+            <Button fx:id="fourthButton" layoutX="21.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" text="Формирование списка должников" />
+            <Label  alignment="CENTER" layoutX="21.0" layoutY="259.0" prefHeight="17.0" prefWidth="283.0" text="Введите на сколько книги должны быть старше" />
+            <TextField fx:id="inpz" layoutX="88.0" layoutY="284.0" />
+         </children></AnchorPane>
+      <Label alignment="CENTER" prefHeight="38.0" prefWidth="320.0" text="Библиотека" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

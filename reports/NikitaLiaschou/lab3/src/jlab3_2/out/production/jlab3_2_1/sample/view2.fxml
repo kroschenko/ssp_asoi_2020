@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zController2">
+    <children>
+        <!-- Таблица в которую мы будем выводит наш pojo -->
+        <TableView fx:id="tableBooks" layoutX="24" layoutY="48" prefHeight="324.0" prefWidth="831.0">
+            <columns>
+                <!-- Колонки таблицы -->
+                <TableColumn fx:id="udkCol" prefWidth="80.0" text="УДК" />
+                <TableColumn fx:id="authorCol" prefWidth="150.0" text="Автор" />
+                <TableColumn fx:id="titleCol" prefWidth="150.0" text="Название книги" />
+                <TableColumn fx:id="countCol" prefWidth="80.0" text="Количество" />
+                <TableColumn fx:id="tomsCol" prefWidth="80.0" text="Томов" />
+                <TableColumn fx:id="dateProduceCol" prefWidth="80.0" text="Год издания" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="30.0" prefWidth="701.0" text="Книги взятые на чтение">
+        </Label>
+    </children>
+</AnchorPane>
