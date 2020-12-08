@@ -1,0 +1,1 @@
+java -jar Lab2_var5_task2.jar cp -fin test.txt out.txt
