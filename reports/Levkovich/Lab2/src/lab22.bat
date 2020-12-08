@@ -1,0 +1,1 @@
+java -jar lab22.jar %*

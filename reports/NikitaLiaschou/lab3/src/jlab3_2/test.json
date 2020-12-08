@@ -1,0 +1,59 @@
+{
+    "books": [
+        {
+            "udkCode": "1",
+            "author": "Автор 1",
+            "title": "Книга1",
+            "count": "10",
+            "toms": "3",
+            "dateProduce": "10.10.1991",
+            "pages": "301",
+            "user": "Пользователь 1",
+            "dateTake": "15.10.2000"
+        },
+        {
+            "udkCode": "2",
+            "author": "Автор 2",
+            "title": "Книга2",
+            "count": "12",
+            "toms": "4",
+            "dateProduce": "10.10.1992",
+            "pages": "41",
+            "user": "Пользователь 2",
+            "dateTake": "15.10.2001"
+        },
+        {
+            "udkCode": "3",
+            "author": "Автор 3",
+            "title": "Книга3",
+            "count": "4",
+            "toms": "1",
+            "dateProduce": "10.10.1993",
+            "pages": "73",
+            "user": "",
+            "dateTake": ""
+        },
+        {
+            "udkCode": "4",
+            "author": "Автор 4",
+            "title": "Книга4",
+            "count": "7",
+            "toms": "6",
+            "dateProduce": "10.10.1994",
+            "pages": "723",
+            "user": "Пользователь 4",
+            "dateTake": "15.10.2021"
+        },
+        {
+            "udkCode": "5",
+            "author": "Автор 5",
+            "title": "Книга5",
+            "count": "13",
+            "toms": "2",
+            "dateProduce": "10.10.1995",
+            "pages": "243",
+            "user": "",
+            "dateTake": ""
+        }
+    ]
+}
