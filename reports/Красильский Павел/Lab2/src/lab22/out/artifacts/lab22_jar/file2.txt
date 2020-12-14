@@ -1,0 +1,8 @@
+1 test this lab
+3 MY
+3 my
+2 tesT
+3 mY
+1 lab
+2 test
+
