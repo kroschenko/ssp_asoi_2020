@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spp32">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spp32/spp32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
